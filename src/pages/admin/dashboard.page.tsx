@@ -9,7 +9,9 @@ const DashboardPage = () => {
       <h1>Dashboard page </h1>
       <p>Bienvenid@, {user?.displayName || "invitado" }!</p>
       <p>Email: {user?.email || "NO Proporcionado"}</p>
-      {/* <p>Uid: {user?.uid || "No disponible"}</p> */}
+      <p>foto: {user?.photoURL || "son foto"}</p>
+      <p>email verificado: {user?.emailVerified || "sin email verificado"}</p>
+      <p>Uid: {user?.uid || "No disponible"}</p>
       <button onClick={() => auth.signOut()}>Cerrar Sesión</button>
     </div>
   )
