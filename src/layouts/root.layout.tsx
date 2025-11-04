@@ -5,6 +5,7 @@ const RootLayout = () => {
   return (
     <div>
       <Outlet/>
+      
       <Toaster
       position="top-center"
       richColors
